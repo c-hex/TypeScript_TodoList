@@ -20,7 +20,7 @@ export const RowBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20%;
+  margin-bottom: 20px;
 `;
 
 export const Input = styled.input`
@@ -31,16 +31,17 @@ export const Input = styled.input`
   outline: none;
   font-size: 20px;
   font-weight: 400;
+  border-right: none;
+
 `;
 
 export const Button = styled.button`
-  width: 130px;
-  height: 41px;
+  width: 50px;
+  height: 42px;
   border: none;
   font-size: 18px;
   font-weight: 600;
   border: 1px solid #000;
-  border-left: none;
 `;
 
 export const List = styled.ul`
@@ -49,14 +50,15 @@ export const List = styled.ul`
   align-items: flex-start;
   width: 513px;
   margin: 0 auto;
-  height: 80%;
+  height: 70%;
   border: 1px solid #000;
+  overflow: scroll;
+  justify-content: space-between;
 `;
 
 export const Todo = styled.li`
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
   width: 80%;
   height: 60px;
@@ -71,11 +73,11 @@ export const Remove = styled.div`
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
   color: #000;
   font-size: 15px;
   cursor: pointer;
-  &:hover {
+  justify-content: center;
+  /* &:hover {
     color: #000;
-  }
+  } */
 `;
